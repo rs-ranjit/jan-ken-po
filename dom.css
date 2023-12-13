@@ -1,0 +1,53 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield;
+}
+
+.subscribe-button{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 50px;
+    }
+
+.rps{
+    margin-bottom: 50px;
+}
+
+ .cost{
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+ }
+
+ .cost::placeholder{
+    font-size: 14px;
+ }
+
+ .calc{
+    width: 90px;
+    height: 40px;
+    background-color: green;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 14px;
+}

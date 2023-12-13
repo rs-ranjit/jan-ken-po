@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+<p>
+    Youtube subscribe button
+</p>
+<button class="subscribe-button">
+    Subscribe
+</button>
+
+<div class="rps">
+    <p>
+        Rock, Paper, Scissors
+    </p>
+    <a href="http://127.0.0.1:5500/web_dev/rock-paper-scisscore2.html">click here</a>    
+</div>
+
+<p>
+    Amazon Shipping Calculator
+</p>
+<p>
+    Order under $40 = +$10 shipping
+</p>
+<p>
+    Order over $40 = FREE shipping
+</p>
+<input type="number" placeholder="Cost of order" min = 0  class="cost" onkeydown="forEnterToWork(event); " >
+<button class="calc" onclick="priceCalculation(); forEnterToWork();" >Calculate</button>
+<p class="price"></p>
+
+    <script>
+
+    function priceCalculation(){
+        const price = document.querySelector('.cost');
+        let cost = Number(price.value);
+
+        if(cost <= 40){
+            cost += 10;
+        }else{
+            cost; 
+        }
+            console.log(cost);
+        document.querySelector('.price').innerHTML = `$${cost}`;
+    }
+
+    function forEnterToWork(event){
+        if(event.key === 'Enter')
+            priceCalculation();
+    }
+
+    </script>
+</body>
+</html>
